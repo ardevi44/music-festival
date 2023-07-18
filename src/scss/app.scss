@@ -1,0 +1,9 @@
+// This is the old version for import
+// styles from other files, this imports will be globals
+/*
+@import "base/variables";
+@import "content/content";
+*/
+
+@use "base";
+@use "layout";

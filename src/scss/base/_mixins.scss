@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+
+/*
+This mixin is not design to create style content, just for the screen size condition.
+*/
+@mixin mobileView {
+  @media (min-width: v.$mobile) {
+    @content; // this directive will be replace width the styles in the @include call 
+  }
+}
+
+@mixin tabletView {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktopView {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin desktopViewXL {
+  @media (min-width: v.$desktopXL) {
+    @content;
+  }
+}
