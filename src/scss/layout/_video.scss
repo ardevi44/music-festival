@@ -28,17 +28,27 @@
 
 .video-content {
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   h2 {
     color: v.$just-white;
     font-size: 7rem;
     margin: 0;
+    letter-spacing: -1.5px;;
   }
   p {
-    background-color: v.$light-pink;
+    // $purple-extra-dark
+  // 
+    background-color: v.$red-dark;
     display: inline-block;
     padding: 1rem 2rem;
     color: v.$just-white;
     font-weight: 700;
     font-size: 2.4rem;
+    align-self: flex-start;
+    @include m.tabletView {
+      font-size: v.$medium;
+    }
   }
 }

@@ -1,4 +1,47 @@
-// Colors
+// COLORS
+
+// **MAIN COLOR**
+
+$main-red: #f50c00;
+
+// tins
+$red-light: #f73d33;
+$red-medium-light: #f96d66;
+$red-extra-light: #fee7e6;
+
+// shades
+$red-dark: #c40a00;
+$red-medium-dark: #930700;
+$red-extra-dark: #310200;
+
+// **MAIN DARK**
+
+$main-black: #0f172a;
+
+// tins
+$black-light: #3f4555;
+$black-medium-light: #6f747f;
+$black-extra-light: #e7e8ea;
+
+// shades
+$black-medium-dark: #0b101d;
+$black-extra-dark: #04070d;
+
+// **ACCENT COLOR**
+
+$accent-purple: #C80069;
+
+// tins
+$accent-purple-light: #d33387;
+$accent-purple-medium-light: #de66a5;
+$accent-purple-extra-light: #f4cce1;
+
+// shades
+$accent-purple-dark: #a00054;
+$accent-purple-medium-dark: #78003f;
+$accent-purple-extra-dark: #280015;
+
+
 $light-green: #4cb8b3;
 $light-pink: #f53756;
 $light-yellow: #fef46d;
@@ -6,11 +49,27 @@ $dark-purple: #752f97;
 $just-black: #000;
 $just-white: #fff;
 
-// Font Stack
-$main-font-stack: 'Montserrat', sans-serif;
+// FONTS
 
-// Screen sizes
+$montserrat-font-stack: 'Montserrat', sans-serif;
+
+// Font sizes
+// 67px | 50px | 38px | 28px | 21px | 16px
+
+$small: 1.6rem;
+$regular: 2.1rem;
+$medium: 2.8rem;
+$medium-large: 3.8rem;
+$large: 5rem;
+$extra-large: 6.7rem;
+
+// SCREEN BREAKPOINTS
+
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 992px;
 $desktopXL: 1200px;
+
+// LETTER SPACING
+
+$medium-spacing: -1.5px;

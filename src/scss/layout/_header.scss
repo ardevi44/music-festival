@@ -2,16 +2,20 @@
 @use "../base/mixins" as m;
 
 .header {
-  background-color: v.$light-green;
+  // $main-black
+  // $black-medium-dark
+  background-color: v.$black-medium-dark;
   h1 {
     color: v.$just-white;
     text-align: center;
+    font-size: v.$medium-large;
+    letter-spacing: v.$medium-spacing;
     @include m.tabletView {
       margin: 0;
     }
   }
   .header-content {
-    padding: 2rem;
+    padding: 1rem;
     @include m.tabletView {
       display: flex;
       justify-content: space-between;
@@ -21,21 +25,27 @@
 }
 
 .main-nav {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
   @include m.tabletView {
-    display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    margin: 0;
+    gap: 4rem;
+    font-size: v.$regular;
   }
   a {
-    display: block;
     text-align: center;
-    margin-bottom: 1rem;
     color: v.$just-white;
-    font-size: 2.4rem;
+    letter-spacing: -0.5px;
     @include m.tabletView {
       margin: 0;
     }
     &:hover {
-      color: v.$light-yellow;
+      color: v.$accent-purple-medium-dark;
     }
   }
 }
