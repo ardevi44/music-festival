@@ -2,18 +2,42 @@
 @use "base/mixins" as m;
 
 .about-festival {
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  padding: 3rem 0;
+  @include m.tabletView {
+    padding: 8rem 0;
+    @include m.gridCustomColumns($columnCount: 2, $columnGap: 5rem);
+  }
+  .image {
+    img {
+      @include m.tabletView () {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 .festival-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: v.$main-black;
+  margin-top: 3rem;
+  @include m.tabletView () {
+    margin-top: unset;
+  }
   h2 {
-
+    font-size: v.$medium-large;
+    margin-bottom: 3rem;
+    @include m.tabletView () {
+      margin-bottom: 5rem;
+    }
   }
 
   .date-info {
-
+    margin-bottom: 3rem;
+    font-size: v.$medium;
+    font-weight: 700;
+    color: v.$main-red;
   }
 }

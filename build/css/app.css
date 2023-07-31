@@ -360,6 +360,11 @@ img {
   display: block;
 }
 
+.regular-text {
+  font-size: 2.1rem;
+  line-height: 1.5;
+}
+
 .header {
   background-color: #0b101d;
 }
@@ -469,10 +474,49 @@ img {
 }
 
 .about-festival {
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .about-festival {
+    padding: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  .about-festival .image img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.festival-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #0f172a;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .festival-content {
+    margin-top: unset;
+  }
+}
+.festival-content h2 {
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .festival-content h2 {
+    margin-bottom: 5rem;
+  }
+}
+.festival-content .date-info {
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f50c00;
 }
 
 /*

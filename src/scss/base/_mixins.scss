@@ -27,3 +27,11 @@ This mixin is not design to create style content, just for the screen size condi
     @content;
   }
 }
+
+// DISPLAY GRID MIXIN
+
+@mixin gridCustomColumns ($columnCount: 2, $columnGap: 5rem) {
+  display: grid;
+  grid-template-columns: repeat($columnCount, 1fr);
+  column-gap: $columnGap;
+}
